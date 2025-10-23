@@ -14,7 +14,7 @@ steps:
   - 'push'
   - '${_IMAGE_PATH}:${SHORT_SHA}'
   id: Push
-
+ 
 # 3. Deployment auf Cloud Run
 # HINWEIS: Das Service Account ist hier hartkodiert, um den Logging-Fehler im Trigger zu umgehen.
 - name: 'gcr.io/cloud-builders/gcloud'
